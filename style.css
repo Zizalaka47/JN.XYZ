@@ -84,6 +84,9 @@
     margin-top: 50px;
     margin-left: 40px;
     margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .show-details-logo{
     display: flex;
@@ -109,14 +112,15 @@
 .buttons{
     display: flex;
     align-items: center;
-    margin-top: 15px;    
+    justify-content: center;
+    margin-top: 15px;
+    gap: 5%; 
 }
 .button-1{
     background-color:rgb(0, 160, 227);
     width: auto;
     height: auto;
     border-radius: 10px;
-    margin-left: 15%;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -137,7 +141,6 @@
     width: auto;
     height: auto;
     border-radius: 10px;
-    margin-left: 5%;    
     transition: 0.3s;    
 }
 .button-2:hover{
@@ -157,7 +160,6 @@
     width: auto;
     height: auto;
     border-radius: 10px;
-    margin-left: 5%;    
     cursor: pointer;
     transition: 0.3s;    
 }
@@ -195,6 +197,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
+    flex-direction: column;
+    align-items: center;
 }
 .show img{
     width: 250px;
@@ -381,4 +385,65 @@
     text-align: center;
     margin-top: 15px;
     cursor: default;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+    .media {
+        height: 450px;
+    }
+    .gradient {
+        height: 450px;
+    }   
+    .logo {
+        width: 80px;
+        margin: 10px;
+    }
+    .navbar a {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    .new-content,
+    .new-content2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        margin-bottom: 75px;
+    }
+    .show-details,
+    .show-details2 {
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .show-details-logo {
+        width: 100%;
+    }
+    .description,
+    .information {
+        font-size: 16px;
+    }
+    .tv-series-covers{
+        flex-direction: column;
+        align-items: center;
+    }
+    .show {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .arrow-right,
+    .arrow-left {
+        width: 40px;
+        background: none;
+    }
+    .arrow-right img,
+    .arrow-left img {
+        width: 30px;
+    }   
 }
