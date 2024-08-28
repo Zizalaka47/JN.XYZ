@@ -67,6 +67,9 @@
     bottom: -8px;
     transition: 0.3s;
 }
+.navbar .logo-link::after {
+    background: transparent;
+} 
 .navbar a:hover{
     color: rgb(71, 191, 255);
     transition: 0.3s;
@@ -256,7 +259,6 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(270deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
 }
 .arrow-right img{
     width: 25px;
@@ -275,7 +277,6 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
 }
 .arrow-left img{
     width: 25px;
@@ -387,7 +388,56 @@
     cursor: default;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1360px) {
+    .show img {
+        width: 220px;
+    }
+}
+@media (max-width: 1210px) {
+    .show img {
+        width: 200px;
+    }
+}
+@media (max-width: 1100px) {
+    .show img {
+        width: 180px;
+    }
+    .resolution {
+        top: 6px;
+        left: 6px;
+    }
+    .imdb {
+        top: 6px;
+        right: 6px;
+    }
+    .resolution p,
+    .imdb p {
+        font-size: 10px;
+    }
+}
+@media (max-width: 1010px) {
+    .show img {
+        width: 158px;
+    }
+    .resolution p,
+    .imdb p {
+        font-size: 9px;
+    }
+}
+@media (max-width: 900px) {
+    .show img {
+        width: 137px;
+    }
+    .resolution p,
+    .imdb p {
+        font-size: 8px;
+    }
+}
+@media (max-width: 800px) {
+    .arrow-left img,
+    .arrow-right img {
+        width: 39px;
+    }
     .container {
         height: auto;
     }
@@ -412,6 +462,9 @@
         flex-direction: column; 
         margin-bottom: 75px;
     }
+    .new-content2 {
+        height: 600px;
+    }
     .show-details,
     .show-details2 {
         width: 90%;
@@ -429,21 +482,46 @@
     .information {
         font-size: 16px;
     }
-    .tv-series-covers{
-        flex-direction: column;
-        align-items: center;
-    }
     .show {
         margin: 10px 0;
         width: 100%;
     }
-    .arrow-right,
-    .arrow-left {
-        width: 40px;
-        background: none;
+    .show a {
+        display: flex;
+        justify-content: center;
     }
-    .arrow-right img,
-    .arrow-left img {
-        width: 30px;
-    }   
+    .show-group {
+        flex-direction: column;
+    }
+    .show img {
+        width: 70%;
+    }
+    .resolution {
+        left: 17%;
+        top: 10px;
+    }
+    .imdb {
+        top: 10px;
+        right: 17%;
+    }
+    .resolution p,
+    .imdb p {
+        font-size: 16px;
+    }
+    .title-series h1 {
+        font-size: 30px;
+        margin-bottom: 26px;
+        margin-left: 0;
+    }
+    .tv-series {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tv-series-covers:hover .show {
+        transform: translateX(0);
+    }
+    .show:hover ~ .show{
+        transform: translateX(0);
+    }
 }
