@@ -455,22 +455,34 @@
         font-size: 14px;
         padding: 0 5px;
     }
-    .new-content,
-    .new-content2 {
+    .new-content {
         display: flex;
         align-items: center;
         flex-direction: column; 
         margin-bottom: 75px;
     }
     .new-content2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+    }
+    .new-content2 {
         height: 600px;
     }
-    .show-details,
-    .show-details2 {
+    .show-details {
         width: 90%;
         height: 100%;
         margin: 0;
         margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .show-details2 {
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        margin-top: -35px;
         display: flex;
         flex-direction: column;
         justify-content: center;
