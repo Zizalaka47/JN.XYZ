@@ -584,11 +584,11 @@ h5 {
 }
 
 .img-footer-container.left {
-    background-image: url("/media/ad-1-footer.png");
+    background-image: url("./media/ad-1-footer.png");
 }
 
 .img-footer-container.right {
-    background-image: url("/media/ad-2-footer.png");
+    background-image: url("./media/ad-2-footer.png");
 }
 
 .img-footer-container img {
