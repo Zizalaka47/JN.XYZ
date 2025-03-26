@@ -580,7 +580,9 @@ h5 {
     position: relative;
     border: 10px solid #171717;
     border-radius: 15px;
-    cursor: pointer;
+    cursor: pointer;    
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .img-footer-container.left {
